@@ -1,0 +1,23 @@
+.datePicker input::-webkit-calendar-picker-indicator {
+	filter: invert(1);
+}
+
+.formDiv {
+	--flex-direction: column;
+	--width: 100%;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	flex-direction: var(--flex-direction);
+}
+
+.formDiv > div {
+	width: var(--width);
+}
+
+@media (width > 900px) {
+	.formDiv {
+		--flex-direction: row;
+		--width: revert;
+	}
+}
